@@ -35,6 +35,7 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
 - Cliente
   - Deverá Fazer Cadastros de sua Ideia.
 
+```s
     Cliente {
         user_id:0000
         user_name:"Nome do Usuario"
@@ -43,6 +44,7 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
         password:"#123@abc"
         idea:"Descrição da Ideia do Cliente"
     }
+```
 
 ## :dart: Status do projeto
 * Em construção.
