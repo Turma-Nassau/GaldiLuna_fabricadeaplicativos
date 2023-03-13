@@ -15,7 +15,7 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
 ## :soon: Implementação futura
 * Projeto poderá conter algumas alterações de melhorias.
 
-## :handshake: Colaboradores
+## :handshake: Colaboradores :man_technologist:
 <table>
   <tr>
     <td align="center">
@@ -27,6 +27,22 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
     </td>
   </tr>
 </table>
+
+## :receipt: Mockup/Storyboard
+- [Figma](https://www.figma.com/file/CDhrosYGqwQcq9Sqzh2YKn/Fabrica-de-Aplicativos?node-id=0%3A1&t=aW9xvoaIenEIfxY1-0) In Progress
+
+## :hammer_and_wrench: Estrutura de Dados
+- Cliente
+  - Deverá Fazer Cadastros de sua Ideia.
+
+    Cliente {
+        user_id:0000
+        user_name:"Nome do Usuario"
+        user_last_name:"Sobrenome do Usuario"
+        e_mail:"nome@site.com.com"
+        password:"#123@abc"
+        idea:"Descrição da Ideia do Cliente"
+    }
 
 ## :dart: Status do projeto
 * Em construção.
