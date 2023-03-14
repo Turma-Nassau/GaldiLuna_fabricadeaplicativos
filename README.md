@@ -33,7 +33,7 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
 
 ## :hammer_and_wrench: Estrutura de Dados
 - Cliente
-  - Deverá Fazer Cadastros de sua Ideia.
+  - Deverá Fazer Cadastro de sua Ideia.
 
 ```s
     Cliente {
