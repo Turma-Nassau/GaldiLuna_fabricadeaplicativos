@@ -11,6 +11,7 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
 * CSS
 * Javascript
 * Node.JS
+* Postgres
 
 ## :soon: Implementação futura
 * Projeto poderá conter algumas alterações de melhorias.
@@ -36,7 +37,7 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
   - Deverá Fazer Cadastro de sua Ideia.
 
 ```s
-    Cliente {
+    Usuario {
         user_id:0000
         user_name:"Nome do Usuario"
         user_last_name:"Sobrenome do Usuario"
