@@ -10,7 +10,7 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
 * HTML
 * CSS
 * Javascript
-* Node.JS
+* Node.J
 * Postgres
 
 ## :soon: Implementação futura
