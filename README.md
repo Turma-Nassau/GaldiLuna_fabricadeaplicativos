@@ -38,7 +38,7 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
 
 ```s
     Usuario {
-        user_id:0000
+        user_id:0001
         user_name:"Nome do Usuario"
         user_last_name:"Sobrenome do Usuario"
         e_mail:"nome@site.com.com"
@@ -47,5 +47,17 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
     }
 ```
 
+- Aplicativo
+  - Cadastro de cada aplicativo solicitado.
+
+```s
+    Aplicativo {
+        id_aplicativo:01
+        nome_aplicativo:"APP"
+        user_id:0001
+    }
+```
+
 ## :dart: Status do projeto
-* Em construção.
+* API pronta.
+* Front em construção.
