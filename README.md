@@ -54,6 +54,7 @@ Projeto criado para a matéria de Códigos de Alta Performance Web. Site de uma 
     Aplicativo {
         id_aplicativo:01
         nome_aplicativo:"APP"
+        valor_aplicativo:1500.00
         user_id:0001
     }
 ```
