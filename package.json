@@ -1,7 +1,7 @@
 {
   "name": "fabrica_aplicativos",
   "version": "1.0.0",
-  "description": "Fábrica de Aplicativos - API",
+  "description": "API de uma Fábrica de Aplicativos",
   "main": "server.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -83,6 +83,8 @@
     "simple-update-notifier": "^1.1.0",
     "statuses": "^2.0.1",
     "supports-color": "^5.5.0",
+    "swagger": "^0.7.5",
+    "swagger-autogen": "^2.23.1",
     "swagger-ui-express": "^4.6.2",
     "to-regex-range": "^5.0.1",
     "toidentifier": "^1.0.1",
@@ -100,7 +102,7 @@
   "keywords": [
     "API",
     "Server",
-    "Fabrica",
+    "Fábrica",
     "Aplicativos"
   ],
   "author": "GaldiLuna",
@@ -109,7 +111,6 @@
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
     "nodemon": "^2.0.21",
-    "sequelize-cli": "^6.6.0",
-    "swagger-autogen": "^2.23.1"
+    "sequelize-cli": "^6.6.0"
   }
 }

@@ -2,8 +2,8 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "FabricaAplicativos API",
-    "description": "Fábrica de Aplicativos"
+    "title": "Fábrica de Aplicativos",
+    "description": "API da Fábrica de Aplicativos"
   },
   "host": "localhost:8182",
   "basePath": "/",
@@ -11,7 +11,69 @@
     "http"
   ],
   "paths": {
-    "/api/users/": {
+    "/api/usuario/": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      },
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/api/usuario/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "patch": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/aplicativo/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
       "post": {
         "description": "",
         "parameters": [
@@ -24,16 +86,13 @@
                 "nome": {
                   "example": "any"
                 },
-                "sobrenome": {
+                "descricao": {
                   "example": "any"
                 },
-                "email": {
+                "valor": {
                   "example": "any"
                 },
-                "telefone": {
-                  "example": "any"
-                },
-                "ideia": {
+                "userId": {
                   "example": "any"
                 }
               }
@@ -48,21 +107,9 @@
             "description": "Internal Server Error"
           }
         }
-      },
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
       }
     },
-    "/api/users/{id}": {
+    "/api/aplicativo/{id}": {
       "get": {
         "description": "",
         "parameters": [
@@ -76,9 +123,6 @@
         "responses": {
           "200": {
             "description": "OK"
-          },
-          "404": {
-            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"
@@ -103,16 +147,13 @@
                 "nome": {
                   "example": "any"
                 },
-                "sobrenome": {
+                "descricao": {
                   "example": "any"
                 },
-                "email": {
+                "valor": {
                   "example": "any"
                 },
-                "telefone": {
-                  "example": "any"
-                },
-                "ideia": {
+                "userId": {
                   "example": "any"
                 }
               }
@@ -123,15 +164,33 @@
           "200": {
             "description": "OK"
           },
-          "404": {
-            "description": "Not Found"
-          },
           "500": {
             "description": "Internal Server Error"
           }
         }
       },
       "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/api/aplicativo/user/{id}": {
+      "get": {
         "description": "",
         "parameters": [
           {

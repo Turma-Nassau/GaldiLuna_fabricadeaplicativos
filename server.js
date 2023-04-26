@@ -9,8 +9,10 @@ const swaggerFile = require('./swagger_output.json');
 const swaggerUi = require('swagger-ui-express');
 
 
-const userRoutes = require('./routes/userRoutes')
+const usuarioRoutes = require('./routes/usuarioRoutes')
+const aplicativoRoutes = require('./routes/aplicativoRoutes')
 const { sequelize } = require('./models')
+
 
 app.use(logger)
 
@@ -35,7 +37,8 @@ const connectDB = async () => {
     }))
 
     
-    app.use('/api/users', userRoutes);
+    app.use('/api/usuario', usuarioRoutes);
+    app.use('/api/aplicativo', aplicativoRoutes);
     app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
     app.listen(PORT, () => {
@@ -53,3 +56,4 @@ function logger(request, response, next) {
     next()
 }
 
+//
