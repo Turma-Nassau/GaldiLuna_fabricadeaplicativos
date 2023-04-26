@@ -11,15 +11,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Usuario.hasMany(models.Aplicativo,{onDelete:'CASCADE', onUpdate:'CASCADE'})
     }
   }
   Usuario.init({
     nome: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING(15),
       allowNull: false
     },
     sobrenome: {
-      type: DataTypes.STRING(20),
+      type: DataTypes.STRING(15),
       allowNull: false
     },
     email: {
@@ -30,13 +31,19 @@ module.exports = (sequelize, DataTypes) => {
         isEmail: true
       }
     },
+    senha: {
+      type: DataTypes.STRING(10),
+      allowNull: false,
+      validate: {
+        len: [6, 10]
+      }
+    },
     telefone: {
       type: DataTypes.NUMERIC(15),
-      allowNull: false,
-      unique: true,
+      allowNull: false
     },
     ideia: {
-      type: DataTypes.TEXT(500),
+      type: DataTypes.TEXT(200),
       allowNull: false
     },
   }, {
@@ -47,3 +54,5 @@ module.exports = (sequelize, DataTypes) => {
 };
 
 //module.exports = Usuario;
+
+//FALTA ID DO USUÁRIO
